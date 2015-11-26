@@ -30,7 +30,8 @@
             });
             $("#us").formValidator({
                 onShow: "Please input your name",
-                onFocus: "At least 1 characters, maximum is 50 characters"
+                onFocus: "At least 1 characters, maximum is 50 characters",
+                onCorrect:"It can be used"
             })
             .inputValidator({
                 min: 1,
@@ -39,7 +40,7 @@
             });
             $("#email").formValidator({
                 onShow: "Please input your email",
-                onFocus: "At least 6 characters, maximum is 100 characters"
+                onFocus: "At least 6 characters, maximum is 100 characters",
             })
           .inputValidator({
               min: 6,
@@ -48,7 +49,8 @@
           });
             $("#feedback").formValidator({
                 onShow: "Please input your feedback",
-                onFocus: "At least 1 characters, maximum is 100 characters"
+                onFocus: "At least 1 characters, maximum is 100 characters",
+                onCorrect: "It can be used"
             })
          .inputValidator({
              min: 1,
