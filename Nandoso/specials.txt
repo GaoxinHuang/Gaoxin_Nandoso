@@ -1,0 +1,61 @@
+﻿[
+    {
+        "name": "Portuguese chicken Caesar salad and PERinaise",
+        "img": "specials1.jpg"
+
+    },
+    {
+        "name": "Chilli chocolate brownies",
+        "img": "specials2.jpg"
+
+    },
+    {
+        "name": "Spicy chicken drumsticks and butternut bake",
+        "img": "specials3.jpg"
+
+    },
+    {
+        "name": "Sweet apricot lamb ribs",
+        "img": "specials4.jpg"
+
+    },
+    {
+        "name": "Chicken sliders with mozzarella and tangy fennel salad",
+        "img": "specials5.jpg"
+
+    },
+    {
+        "name": "Crispy crumbed chicken fillets with skinny sweet potato fries",
+        "img": "specials6.jpg"
+
+    },
+    {
+        "name": "Chicken and chargrilled red pepper paella with fresh lime",
+        "img": "specials7.jpg"
+
+    },
+    {
+        "name": "PERi-PERi roast chicken with coconut and lime rice",
+        "img": "specials8.jpg"
+
+    },
+    {
+        "name": "Coconut chicken nuggets with a strawberry and crème fraiche salad",
+        "img": "specials9.jpg"
+
+    },
+    {
+        "name": "PERi-PERi Hommus",
+        "img": "specials10.jpg"
+
+    },
+    {
+        "name": "Beef strips with noodles",
+        "img": "specials11.jpg"
+
+    },
+    {
+        "name": "Grilled Spachcock chicken with cooling beetroot slaw",
+        "img": "specials12.jpg"
+    }
+]

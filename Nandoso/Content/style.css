@@ -1,0 +1,21 @@
+﻿footer .container, .nav {
+    text-align: center;
+}
+
+table.feedback-table {
+    width:400px;
+    margin-top: 10px;
+    border: solid #add9c0;
+    border-width: 1px 0px 0px 1px;
+}
+
+    table.feedback-table td {
+        border: solid #add9c0;
+        border-width: 0px 1px 1px 0px;
+        padding: 10px 20px;
+    }
+
+
+    table.feedback-table tr.thead {
+        background-color: #a0d9b4;
+    }

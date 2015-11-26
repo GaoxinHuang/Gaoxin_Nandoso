@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Nandoso - Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/Site.css" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/validatorTidyMode.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/formValidator-4.0.1.js"></script>
+    <script src="Scripts/formValidatorRegex.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.formValidator.initConfig({
+                formID: "form1",
+                autoTip: true,
+                tidyMode: true,
+                onError: function (msg) { alert(msg) }
+            });
+            $("#us").formValidator({
+                onShow: "Please input your name",
+                onFocus: "At least 1 characters, maximum is 50 characters"
+            })
+            .inputValidator({
+                min: 1,
+                max: 50,
+                onError: "Sorry, please check your input"
+            });
+            $("#email").formValidator({
+                onShow: "Please input your email",
+                onFocus: "At least 6 characters, maximum is 100 characters"
+            })
+          .inputValidator({
+              min: 6,
+              max: 100,
+              onError: "Sorry, please check your input"
+          });
+            $("#feedback").formValidator({
+                onShow: "Please input your feedback",
+                onFocus: "At least 1 characters, maximum is 100 characters"
+            })
+         .inputValidator({
+             min: 1,
+             max: 100,
+             onError: "Sorry, please check your input"
+         });
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="http://gaoxinchat.azurewebsites.net/" target="_blank">LiveChat</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="index.html" method="post" id="form1">
+                    <h1>Feedback Form</h1>
+                    <table class="table table-striped feedback-table">
+                        <tr class="thead"><td>Name:</td></tr>
+
+
+                        <tr><td><input type="text" name="name" id="us" /><span id="usTip"></span></td></tr>
+
+
+                        <tr class="thead"><td><div class="thead">Email:</div></td></tr>
+
+                        <tr><td><input type="email" name="email" id="email" /><span id="emailTip"></span></td></tr>
+
+                        <tr class="thead"><td><div class="thead">Your Feedback</div></td></tr>
+                        <tbody>
+                            <tr><td><textarea name="feedback" rows="10" cols="30" id="feedback"></textarea><span id="feedbackTip"></span></td></tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" value="submit" />
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="contact">
+                    <h1>Contact Us</h1>
+                    <p><strong>Telephone:</strong> 0800-NANDOSO (0800-6263-676)</p>
+                    <p><strong>Email:</strong>support@nandoso.com</p>
+                    <p>
+                        <strong>Address:</strong>328 Queen Street
+                        Auckland Central City
+                    </p>
+                    <p><strong>Hours:</strong>11:00AM-7:30PM Mondays-Fridays</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; Nandoso - Gaoxin Huang </p>
+        </div>
+    </footer>
+</body>
+</html>
