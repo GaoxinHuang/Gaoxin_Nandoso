@@ -76,16 +76,16 @@
                     <h1>Feedback Form</h1>
                     <table class="table table-striped feedback-table">
                         <tr class="thead"><td>Name:</td></tr>
-                        <tr><td><input type="text" name="name" id="us" /><span id="usTip"></span></td></tr>
+                        <tr><td><input type="text" name="name" id="us" required="required" title="Please Enter your Name" placeholder="Gaoxin Huang" /><span id="usTip"></span></td></tr>
 
 
                         <tr class="thead"><td><div class="thead">Email:</div></td></tr>
 
-                        <tr><td><input type="email" name="email" id="email" /><span id="emailTip"></span></td></tr>
+                        <tr><td><input type="email" name="email" id="email" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required="required" title="please enter your email" placeholder="someone@example.com" /><span id="emailTip"></span></td></tr>
 
                         <tr class="thead"><td><div class="thead">Your Feedback</div></td></tr>
 
-                        <tr><td><textarea name="feedback" rows="10" cols="30" id="feedback"></textarea><span id="feedbackTip"></span></td></tr>
+                        <tr><td><textarea name="feedback" rows="10" cols="30" id="feedback" required="required" title="Please Enter your Password" placeholder="Hello"></textarea><span id="feedbackTip"></span></td></tr>
 
                     </table>
                     <button type="button" value="submit" onclick="sendEmail();" >Submit</button>
