@@ -72,12 +72,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <form action="index.html" method="post" id="form1">
+                <form action="http://www.huanggaoxin.com/sendemail/mailer_tool.php" method="post" id="form1">
                     <h1>Feedback Form</h1>
                     <table class="table table-striped feedback-table">
                         <tr class="thead"><td>Name:</td></tr>
-
-
                         <tr><td><input type="text" name="name" id="us" /><span id="usTip"></span></td></tr>
 
 
@@ -86,11 +84,11 @@
                         <tr><td><input type="email" name="email" id="email" /><span id="emailTip"></span></td></tr>
 
                         <tr class="thead"><td><div class="thead">Your Feedback</div></td></tr>
-                        <tbody>
-                            <tr><td><textarea name="feedback" rows="10" cols="30" id="feedback"></textarea><span id="feedbackTip"></span></td></tr>
-                        </tbody>
+
+                        <tr><td><textarea name="feedback" rows="10" cols="30" id="feedback"></textarea><span id="feedbackTip"></span></td></tr>
+
                     </table>
-                    <input type="submit" value="submit" />
+                    <button type="button" value="submit" onclick="sendEmail();" >Submit</button>
 
                 </form>
             </div>
@@ -113,5 +111,6 @@
             <p>&copy; Nandoso - Gaoxin Huang </p>
         </div>
     </footer>
+    <script src="Scripts/index.js"></script>
 </body>
 </html>

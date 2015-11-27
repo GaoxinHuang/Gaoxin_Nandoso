@@ -26,3 +26,16 @@ function getSpecials() {
 function randomNum(minNum) {
     return Math.floor(Math.random() * minNum);
 }
+function sendEmail() {
+    $.ajax({
+        type: 'POST',
+        url: 'http://www.huanggaoxin.com/sendemail/mailer_tool.php',
+        data: 'name=' + $("#us").val() + '&email=' + $('#email').val() + '&feedback='+$('#feedback').val(),
+        success: function (data) {
+            alert('Send Successfully');
+        },
+        error: function () {
+            alert("Send Email");
+        }
+    });
+}
