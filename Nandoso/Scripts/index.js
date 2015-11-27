@@ -32,10 +32,10 @@ function sendEmail() {
         url: 'http://www.huanggaoxin.com/sendemail/mailer_tool.php',
         data: 'name=' + $("#us").val() + '&email=' + $('#email').val() + '&feedback='+$('#feedback').val(),
         success: function (data) {
-            alert('Send Successfully');
+            alert('Send email Successfully');
         },
         error: function () {
-            alert("Send Email");
+            alert("Email has sent");
         }
     });
 }
